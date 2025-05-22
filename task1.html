@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f0f0f0;
+                text-align: center;
+                padding: 20px;
+            }
+            button {
+                background-color: #4CAF50; /* Green */
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+                border-radius: 5px;
+                transition: background-color 0.3s;
+            }
+            button:hover {
+                background-color: #45a049; /* Darker green */
+            }
+            h1 {
+                color: #333;
+                margin-top: 20px;
+                font-size: 24px;
+            }
+        </style>
+        <script>
+            function m(){
+                document.getElementById('a').innerHTML="special day";
+            }
+            function t(){
+                document.getElementById('b').innerHTML="wonderful day";
+            }
+            function w(){
+                document.getElementById('c').innerHTML="extraordinary day";
+            }
+            function th(){
+                document.getElementById('d').innerHTML="worship day";
+            }
+            function f(){
+                document.getElementById('e').innerHTML="very special day";
+            }
+            function s(){
+                document.getElementById('f').innerHTML="weekend";
+            }
+            function d(){
+                document.getElementById('g').innerHTML="enjoyment";
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="m()">Monday</button>
+        <h1 id="a"></h1>
+        <button onclick="t()">Tuesday</button>
+        <h1 id="b"></h1>
+        <button onclick="w()">Wednesday</button>
+        <h1 id="c"></h1>
+        <button onclick="th()">Thursday</button>
+        <h1 id="d"></h1>
+        <button onclick="f()">Friday</button>
+        <h1 id="e"></h1>
+        <button onclick="s()">Saturday</button>
+        <h1 id="f"></h1>
+        <button onclick="d()">Sunday</button>
+        <h1 id="g"></h1>
+    </body>
+</html>
