@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                margin: 0;
+                padding: 20px;
+            }
+            h1 {
+                text-align: center;
+                color: #333;
+            }
+            input[type="text"],
+            input[type="number"] {
+                width: 100%;
+                padding: 10px;
+                margin: 10px 0;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+            button {
+                background-color: #4CAF50;
+                color: white;
+                padding: 10px 15px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                width: 100%;
+            }
+            button:hover {
+                background-color: #45a049;
+            }
+            #avg {
+                margin-top: 20px;
+                font-size: 1.2em;
+                color: #333;
+            }
+        </style>
+        <script>
+            function a() {
+                let x = document.getElementById("stn").value;
+                let a = parseInt(document.getElementById("s1").value);
+                let b = parseInt(document.getElementById("s2").value);
+                let c = parseInt(document.getElementById("s3").value);
+                let d = parseInt(document.getElementById("s4").value);
+                let e = parseInt(document.getElementById("s5").value);
+                let avg = (a + b + c + d + e) / 5;
+                document.getElementById("avg").innerHTML = "Student Name: " + x + " | Average: " + avg.toFixed(2);
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Student Average Calculator</h1>
+        Student Name: <input type="text" id="stn"><br>
+        Subject 1 Marks: <input type="number" id="s1"><br>
+        Subject 2 Marks: <input type="number" id="s2"><br>
+        Subject 3 Marks: <input type="number" id="s3"><br>
+        Subject 4 Marks: <input type="number" id="s4"><br>
+        Subject 5 Marks: <input type="number" id="s5"><br>
+        <button onclick="a()">Calculate Average</button>
+        <p id="avg"></p>
+    </body>
+</html>
