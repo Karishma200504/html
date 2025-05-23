@@ -1,0 +1,47 @@
+<html>
+<head>
+    <style>
+        /* Optional base styles for better appearance */
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        p {
+            padding: 10px;
+            transition: all 0.3s ease;
+        }
+        button {
+            margin: 5px;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function a(){
+            document.getElementById('a').style.color = "blue";
+        }
+        function b(){
+            document.getElementById('a').style.fontSize = "30px"; // corrected property name
+        }
+        function c(){
+            document.getElementById('a').style.fontStyle = "italic";
+        }
+        function d(){
+            document.getElementById('a').style.border = "4px solid pink";
+        }
+    </script>
+</head>
+<body>
+    <p id="a">
+        Sponsored Unique Experience & Lowest Price Guaranteed. Book Online.
+        Make Your Dream Honeymoon a Reality - Book Our Affordable Manali Tour Packages.
+        Assured Service Quality · Instant Confirmation · Best Price Guaranteed.
+        Manali Tour Package From Delhi For Couples & Family
+    </p>
+
+    <button onclick="a()">Change Color</button>
+    <button onclick="b()">Change Font Size</button>
+    <button onclick="c()">Italic Font</button>
+    <button onclick="d()">Add Border</button>
+</body>
+</html>
